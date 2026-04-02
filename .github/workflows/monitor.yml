@@ -24,6 +24,6 @@ jobs:
 
       - name: Run site monitor
         env:
-          TELEGRAM_TOKEN: ${{ 7984798242:AAH97OBuxnxHGocHjXnN8yjsbo3lwk5h_uU }}
-          TELEGRAM_CHAT_ID: ${{ 1058896322 }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python monitor.py
