@@ -2,6 +2,7 @@
 # Каждый URL на отдельной строке
 # Строки начинающиеся с # — комментарии
 
-https://example.com
-https://mysite.ru
-https://shop.mysite.ru
+https://esimway.com
+https://esimsdata.com
+https://esim5g.com
+https://topup-balance.com
