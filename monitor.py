@@ -30,7 +30,7 @@ def check_site(url: str) -> dict:
         resp = requests.get(url, timeout=TIMEOUT, allow_redirects=True,
                             headers={"User-Agent": "SiteMonitorBot/1.0"})
         elapsed = round(time.time() - start, 2)
-        ok = resp.status_code not in [500, 502, 503, 504]
+        ok = resp.status_code not in [403, 500, 502, 503, 504]
         result.update({"ok": ok, "status": resp.status_code, "elapsed": elapsed})
     except requests.exceptions.Timeout:
         result["error"] = "Таймаут"
